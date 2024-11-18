@@ -1,4 +1,3 @@
-# network-traffic-simulation
 
 # Network Traffic Simulation with Kafka and Cassandra
 
