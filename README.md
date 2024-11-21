@@ -56,7 +56,7 @@ docker run --name my-zookeeper -d zookeeper
 **3.2 Run Kafka (linked to Zookeeper):**
 Kafka is used for streaming the simulated data. Use the following command to start Kafka:
 ```bash
-docker run --name my-kafka --link my-zookeeper -d -p 9092:9092 kafka
+docker run --name my-kafka --link my-zookeeper:zookeeper -d confluentinc/cp-kafka
 ```
 **3.3 Run Cassandra:**
 Cassandra is used to store the processed network traffic data. Run Cassandra with the following command:
